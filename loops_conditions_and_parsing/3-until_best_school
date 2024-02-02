@@ -2,8 +2,8 @@
 # this script is to display Best School 10 times using until loop
  initialize counter 
 counter=0
-until [ $counter -age 10 ]; do
+# use until loop to display "Best School" 10 times
+until [ $counter -ge 10 ]; do
 echo "Best School"
 ((counter++))
 done
-
