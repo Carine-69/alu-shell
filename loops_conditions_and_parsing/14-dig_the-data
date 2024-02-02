@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script groups visitors by IP and HTTP status code, displays the data, and orders it by occurrences using awk
+# This script groups visitors by IP and HTTP status code, displays the data, and orders it by occurrences using awk and sort
 
 # Check if the apache-access.log file exists
 if [ -e "apache-access.log" ]; then
