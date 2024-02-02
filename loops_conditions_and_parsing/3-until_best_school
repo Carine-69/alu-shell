@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # this script is to display Best School 10 times using until loop
- initialize counter 
+#initialize counter
 counter=0
-# use until loop to display "Best School" 10 times
+#use until loop to display "Best School" 10 times
 until [ $counter -ge 10 ]; do
 echo "Best School"
 ((counter++))
