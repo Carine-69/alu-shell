@@ -9,8 +9,8 @@ if [ -e "$passwd_file" ]; then
     # Use while loop to read each line of the file
     while IFS=: read -r username _ userid groupid _ home_directory shell; do
         # Generate and display the fictional story
-        echo "The user $username is part of the $groupid gang, lives in $home_directory, and rides $shell."
-        echo "USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID $userid INFO"
+        echo "The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL."
+        echo "USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO"
         echo
     done < "$passwd_file"
 else
