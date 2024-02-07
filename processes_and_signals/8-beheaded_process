@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+#kill highlander
+pkill -f "highlander" --signal SICKILL
