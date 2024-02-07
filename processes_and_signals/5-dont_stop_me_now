@@ -7,4 +7,5 @@ if [ -n "$process_pid" ]; then
     # Use kill to stop the process
     kill "$process_pid"
     echo "Process stopped successfully"
-
+else 
+	echo "process not found"
