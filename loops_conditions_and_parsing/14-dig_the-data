@@ -1,10 +1,3 @@
 #!/usr/bin/env bash
-# This script groups visitors by IP and HTTP status code, displays the data, and orders it by occurrences using awk and sort
-
-# Check if the apache-access.log file exists
-if [ -e "apache-access.log" ]; then
-    # Use awk to group, count occurrences, and display in descending order
-    awk '{ count[$1, $9]++ } END { for (i in count) print count[i], i }' apache-access.log | sort -nr
-else
-    echo "Error: apache-access.log file not found."
-fi
+# Dig the data
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -r
